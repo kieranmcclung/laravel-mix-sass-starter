@@ -7,6 +7,7 @@ mix.sass('src/scss/style.scss', 'dist/css', {
 		outputStyle: 'expanded'
 	}
 }).options({
+	processCssUrls: false,
 	postCss: [
 		require('postcss-custom-properties')
 	]
